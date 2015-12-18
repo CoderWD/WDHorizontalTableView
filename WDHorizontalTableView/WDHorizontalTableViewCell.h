@@ -12,6 +12,6 @@
 
 @property(nonatomic,strong) UIView *contentView;
 @property(nonatomic,strong) NSString *identifier;
--(instancetype)initWithReuseIdentifier:identifier;
+-(instancetype)initWithReuseIdentifier:(NSString*)identifier;
 
 @end

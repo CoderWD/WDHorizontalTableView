@@ -10,7 +10,7 @@
 
 @implementation WDHorizontalTableViewCell
 
--(instancetype)initWithReuseIdentifier:identifier{
+-(instancetype)initWithReuseIdentifier:(NSString*)identifier{
     self = [super init];
     if (self) {
         _contentView = [[UIView alloc] init];

@@ -17,7 +17,8 @@
 }
 
 @property(nullable,nonatomic,weak) id <WDHorizontalTableViewDelegate> delegate;
-//取复用池
--(WDHorizontalTableViewCell*)dequeueReusableCellWithIdentifier:(NSString*)identifier;
 @property(nonatomic,assign) CGFloat columnWidth;
+//取复用池
+-(nullable __kindof WDHorizontalTableViewCell*)dequeueReusableCellWithIdentifier:(nullable __kindof NSString*)identifier;
+
 @end

@@ -77,7 +77,6 @@
     }
 }
 
-
 -(void)reloadData{
     if ([self.delegate respondsToSelector:@selector(horizontalTableViewNumberOfColumn:)]) {
         columnCount = [self.delegate horizontalTableViewNumberOfColumn:self];
