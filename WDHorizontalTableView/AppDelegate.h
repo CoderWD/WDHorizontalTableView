@@ -2,23 +2,15 @@
 //  AppDelegate.h
 //  WDHorizontalTableView
 //
-//  Created by 何伟东 Emal:xingfumanong@sina.cn QQ:654500619 on 15/12/18.
-//  Copyright © 2015年 何伟东.  All rights reserved.
+//  Created by 何伟东 on 2018/2/23.
+//  Copyright © 2018年 何伟东. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
 
 
 @end

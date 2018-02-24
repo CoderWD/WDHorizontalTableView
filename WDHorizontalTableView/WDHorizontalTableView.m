@@ -1,108 +1,149 @@
 //
 //  WDHorizontalTableView.m
-//  WDHorizontalTableView
+//  ZYGameCenter
 //
-//  Created by 何伟东 Emal:xingfumanong@sina.cn QQ:654500619 on 15/12/18.
-//  Copyright © 2015年 何伟东.  All rights reserved.
+//  Created by 何伟东 on 2017/12/28.
+//  Copyright © 2017年 何伟东. All rights reserved.
 //
 
 #import "WDHorizontalTableView.h"
-#import "UIView+WDHorizontalTableView.h"
+#import <Masonry/Masonry.h>
+#import <WDKit/WDKit.h>
+
+@interface WDHorizontalTableView ()<UIScrollViewDelegate>
+@property(nonatomic,strong) NSMutableArray *itemRectArray;
+@property(nonatomic,strong) NSMutableArray<WDHorizontalTableViewItem*> *reuseItemViews;
+@end
 
 @implementation WDHorizontalTableView
-@dynamic delegate;
 
--(instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
+//@synthesize dataSource,delegate;
+//@dynamic dataSource,delegate;
+
+-(instancetype)init{
+    self = [super init];
     if (self) {
-        [self setColumnWidth:45];
+        _scrollView = [[UIScrollView alloc] init];
+        [self addSubview:self.scrollView];
+        [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.bottom.mas_equalTo(0);
+        }];
+        //[_scrollView setScrollEnabled:NO];
+        //[_scrollView setPagingEnabled:YES];
+        [_scrollView setDelegate:self];
+        
+        _contentView = [[UIView alloc] init];
+        [_scrollView addSubview:_contentView];
+        [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.bottom.mas_equalTo(0);
+            make.centerY.mas_equalTo(0);
+            make.height.equalTo(_scrollView);
+            make.width.mas_equalTo(0);
+        }];
     }
     return self;
 }
 
--(void)layoutSubviews{
-    [super layoutSubviews];
-    [self reloadData];
-}
-
--(void)setDelegate:(id<WDHorizontalTableViewDelegate>)delegate{
-    _delegate = delegate;
-}
--(id<WDHorizontalTableViewDelegate>)delegate{
-    return _delegate;
-}
-
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [self layoutItemView];
-}
-
--(void)layoutItemView{
-    //当前显示所在的contentOffset
-    CGRect currentRect = CGRectMake(self.contentOffset.x, 0, self.width, self.height);
-    CGRect itemRect = CGRectZero;
-    for (NSInteger i = 0; i < columnCount; i++) {
-        //每个itemView的Rect
-        itemRect = CGRectMake(i*_columnWidth, 0, _columnWidth, self.height);
-        //如果Rect有交集
-        if (CGRectIntersectsRect(currentRect, itemRect)) {
-            BOOL isExsit = NO;
-            for (WDHorizontalTableViewCell *cell in [self subviews]) {
-                if ([cell isKindOfClass:[WDHorizontalTableViewCell class]]) {
-                    if (CGRectEqualToRect(cell.frame, itemRect)) {
-                        isExsit = YES;
-                    }
-                }
-            }
-            //如果可见区域没有对应的itemView
-            if (!isExsit) {
-                //获取cell
-                if ([self.delegate respondsToSelector:@selector(horizontalTableView:cellForColumnIndex:)]) {
-                    WDHorizontalTableViewCell *cell = [self.delegate horizontalTableView:self cellForColumnIndex:i];
-                    [cell setFrame:itemRect];
-                    [self addSubview:cell];
-                }
-            }
-            
-        }
-    }
-    //回收不可见的itemView
-    for (WDHorizontalTableViewCell *cell in [self subviews]) {
-        if ([cell isKindOfClass:[WDHorizontalTableViewCell class]]) {
-            if (!CGRectIntersectsRect(currentRect, cell.frame)) {
-                NSMutableArray *reuseCellsViewArray = [[WDHorizontalTableViewCellPool shareInstance].reuseCellsDictionary objectForKey:cell.identifier];
-                [reuseCellsViewArray addObject:cell];
-                [cell removeFromSuperview];
-            }
-        }
-    }
-}
-
+/**
+ 刷新视图
+ */
 -(void)reloadData{
-    if ([self.delegate respondsToSelector:@selector(horizontalTableViewNumberOfColumn:)]) {
-        columnCount = [self.delegate horizontalTableViewNumberOfColumn:self];
-        [self setContentSize:CGSizeMake(columnCount*_columnWidth < self.width ? self.width+0.5 : columnCount*_columnWidth, self.height)];
-        //回收itemView
-        for (WDHorizontalTableViewCell *cell in [self subviews]) {
-            if ([cell isKindOfClass:[WDHorizontalTableViewCell class]]) {
-                NSMutableArray *reuseCellsViewArray = [[WDHorizontalTableViewCellPool shareInstance].reuseCellsDictionary objectForKey:cell.identifier];
-                [reuseCellsViewArray addObject:cell];
-                [cell removeFromSuperview];
+    if ([_dataSource respondsToSelector:@selector(numberOfItemCount)]) {
+        NSInteger count = [_dataSource numberOfItemCount];
+        [_contentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(_itemWidth*count);
+        }];
+        
+        if (!_itemRectArray) {
+            _itemRectArray = [[NSMutableArray alloc] init];
+        }
+        if ([_itemRectArray count]) {
+            [_itemRectArray removeAllObjects];
+        }
+        for (int i = 0; i < count ; i++) {
+            CGRect rect = CGRectMake(i*_itemWidth, 0, _itemWidth, _scrollView.height);
+            [_itemRectArray addObject:NSStringFromCGRect(rect)];
+        }
+        //显示当前区域的itemView
+        [self addIntersItemView:_scrollView];
+    }
+}
+
+
+-(WDHorizontalTableViewItem*)dequeueReusableItem{
+    if ([_reuseItemViews count]) {
+        WDHorizontalTableViewItem *itemView = _reuseItemViews.firstObject;
+        [_reuseItemViews removeObject:itemView];
+        return itemView;
+    }else{
+        WDHorizontalTableViewItem *itemView = [[WDHorizontalTableViewItem alloc] init];
+        return itemView;
+    }
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    //取出超出的
+    __weak typeof(self)weakSelf = self;
+    
+    CGRect rect = CGRectMake(scrollView.contentOffset.x, 0, _itemWidth, _scrollView.height);
+    [scrollView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[WDHorizontalTableViewItem class]]) {
+            if (!CGRectIntersectsRect(rect, obj.frame)) {
+                [obj removeFromSuperview];
+                [weakSelf.reuseItemViews addObject:obj];
             }
         }
-        [self layoutItemView];
+    }];
+    //放入进来的
+    [self addIntersItemView:scrollView];
+}
+
+/**
+ 加载要进来的
+
+ @param scrollView <#scrollView description#>
+ */
+-(void)addIntersItemView:(UIScrollView *)scrollView{
+    if ([_dataSource respondsToSelector:@selector(contentView:fromIndex:)]) {
+        CGFloat x = scrollView.contentOffset.x;
+        CGRect rect = CGRectMake(x, 0, _itemWidth, scrollView.height);
+        NSMutableArray *inters = [NSMutableArray array];
+        [_itemRectArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            CGRect itemRect = CGRectFromString(obj);
+            if(CGRectIntersectsRect(rect, itemRect)){
+                [inters addObject:obj];
+            }
+        }];
+        NSInteger count = 0;
+        if ([_dataSource respondsToSelector:@selector(numberOfItemCount)]) {
+            count = [_dataSource numberOfItemCount];
+        }
+        __weak typeof(self)weakSelf = self;
+        [inters enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            CGRect itemRect = CGRectFromString(obj);
+            NSInteger idex = itemRect.origin.x/weakSelf.itemWidth;
+            WDHorizontalTableViewItem *itemView = [weakSelf.dataSource contentView:weakSelf fromIndex:idex];
+            [weakSelf.contentView addSubview:itemView];
+            [itemView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.mas_equalTo(itemRect.origin.x);
+                make.width.mas_equalTo(weakSelf.itemWidth);
+                make.top.bottom.mas_equalTo(0);
+            }];
+        }];
     }
 }
 
--(WDHorizontalTableViewCell*)dequeueReusableCellWithIdentifier:(NSString*)identifier{
-    NSMutableArray *reuseCellArray = [[WDHorizontalTableViewCellPool shareInstance] cellsWithIdentifier:identifier];
-    if ([reuseCellArray count]) {
-        WDHorizontalTableViewCell *cell = [reuseCellArray lastObject];
-        [reuseCellArray removeLastObject];
-        return cell;
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSInteger page = scrollView.contentOffset.x/_itemWidth;
+    if ([_delegate respondsToSelector:@selector(swithPageIndex:)]) {
+        [_delegate swithPageIndex:page];
     }
-    return nil;
 }
 
+-(void)dealloc{
+    
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

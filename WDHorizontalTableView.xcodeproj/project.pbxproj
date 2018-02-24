@@ -3,87 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6665BCE1C239F4200B5D255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665BCD1C239F4200B5D255 /* main.m */; };
-		B6665BD11C239F4200B5D255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665BD01C239F4200B5D255 /* AppDelegate.m */; };
-		B6665BD41C239F4200B5D255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665BD31C239F4200B5D255 /* ViewController.m */; };
-		B6665BD71C239F4200B5D255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6665BD51C239F4200B5D255 /* Main.storyboard */; };
-		B6665BDA1C239F4200B5D255 /* WDHorizontalTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6665BD81C239F4200B5D255 /* WDHorizontalTableView.xcdatamodeld */; };
-		B6665BDC1C239F4200B5D255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6665BDB1C239F4200B5D255 /* Assets.xcassets */; };
-		B6665BDF1C239F4200B5D255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6665BDD1C239F4200B5D255 /* LaunchScreen.storyboard */; };
-		B6665BEA1C239F4200B5D255 /* WDHorizontalTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665BE91C239F4200B5D255 /* WDHorizontalTableViewTests.m */; };
-		B6665BF51C239F4200B5D255 /* WDHorizontalTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665BF41C239F4200B5D255 /* WDHorizontalTableViewUITests.m */; };
-		B6665C051C239F6E00B5D255 /* WDHorizontalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665C041C239F6E00B5D255 /* WDHorizontalTableView.m */; };
-		B6665C081C239F9700B5D255 /* WDHorizontalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665C071C239F9700B5D255 /* WDHorizontalTableViewCell.m */; };
-		B6665C0D1C23A00300B5D255 /* WDHorizontalTableViewCellPool.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665C0C1C23A00300B5D255 /* WDHorizontalTableViewCellPool.m */; };
-		B6665C101C23A02900B5D255 /* UIView+WDHorizontalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6665C0F1C23A02900B5D255 /* UIView+WDHorizontalTableView.m */; };
+		3CFC3114A0D875C0C7B1A670 /* libPods-WDHorizontalTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28891B3E2714928E41D6B87B /* libPods-WDHorizontalTableView.a */; };
+		B682A9AD203FC0F700AF6865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A9AC203FC0F700AF6865 /* AppDelegate.m */; };
+		B682A9B0203FC0F700AF6865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A9AF203FC0F700AF6865 /* ViewController.m */; };
+		B682A9B3203FC0F700AF6865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B682A9B1203FC0F700AF6865 /* Main.storyboard */; };
+		B682A9B5203FC0F700AF6865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B682A9B4203FC0F700AF6865 /* Assets.xcassets */; };
+		B682A9B8203FC0F700AF6865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B682A9B6203FC0F700AF6865 /* LaunchScreen.storyboard */; };
+		B682A9BB203FC0F700AF6865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A9BA203FC0F700AF6865 /* main.m */; };
+		B682A9C5203FC0F800AF6865 /* WDHorizontalTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A9C4203FC0F800AF6865 /* WDHorizontalTableViewTests.m */; };
+		B682A9D4203FC10900AF6865 /* WDHorizontalTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A9CF203FC10900AF6865 /* WDHorizontalTableViewItem.m */; };
+		B682A9D6203FC10900AF6865 /* WDHorizontalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A9D1203FC10900AF6865 /* WDHorizontalTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B6665BE61C239F4200B5D255 /* PBXContainerItemProxy */ = {
+		B682A9C1203FC0F800AF6865 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B6665BC11C239F4200B5D255 /* Project object */;
+			containerPortal = B682A9A0203FC0F700AF6865 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B6665BC81C239F4200B5D255;
-			remoteInfo = WDHorizontalTableView;
-		};
-		B6665BF11C239F4200B5D255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B6665BC11C239F4200B5D255 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6665BC81C239F4200B5D255;
+			remoteGlobalIDString = B682A9A7203FC0F700AF6865;
 			remoteInfo = WDHorizontalTableView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B6665BC91C239F4200B5D255 /* WDHorizontalTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDHorizontalTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6665BCD1C239F4200B5D255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6665BCF1C239F4200B5D255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B6665BD01C239F4200B5D255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B6665BD21C239F4200B5D255 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B6665BD31C239F4200B5D255 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B6665BD61C239F4200B5D255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6665BD91C239F4200B5D255 /* WDHorizontalTableView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WDHorizontalTableView.xcdatamodel; sourceTree = "<group>"; };
-		B6665BDB1C239F4200B5D255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B6665BDE1C239F4200B5D255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B6665BE01C239F4200B5D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6665BE51C239F4200B5D255 /* WDHorizontalTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDHorizontalTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6665BE91C239F4200B5D255 /* WDHorizontalTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableViewTests.m; sourceTree = "<group>"; };
-		B6665BEB1C239F4200B5D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6665BF01C239F4200B5D255 /* WDHorizontalTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDHorizontalTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6665BF41C239F4200B5D255 /* WDHorizontalTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableViewUITests.m; sourceTree = "<group>"; };
-		B6665BF61C239F4200B5D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6665C031C239F6E00B5D255 /* WDHorizontalTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHorizontalTableView.h; sourceTree = "<group>"; };
-		B6665C041C239F6E00B5D255 /* WDHorizontalTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableView.m; sourceTree = "<group>"; };
-		B6665C061C239F9600B5D255 /* WDHorizontalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHorizontalTableViewCell.h; sourceTree = "<group>"; };
-		B6665C071C239F9700B5D255 /* WDHorizontalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableViewCell.m; sourceTree = "<group>"; };
-		B6665C0B1C23A00300B5D255 /* WDHorizontalTableViewCellPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHorizontalTableViewCellPool.h; sourceTree = "<group>"; };
-		B6665C0C1C23A00300B5D255 /* WDHorizontalTableViewCellPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableViewCellPool.m; sourceTree = "<group>"; };
-		B6665C0E1C23A02900B5D255 /* UIView+WDHorizontalTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WDHorizontalTableView.h"; sourceTree = "<group>"; };
-		B6665C0F1C23A02900B5D255 /* UIView+WDHorizontalTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WDHorizontalTableView.m"; sourceTree = "<group>"; };
-		B68AD83A1C23A93F00522C4F /* WDHorizontalTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHorizontalTableViewDelegate.h; sourceTree = "<group>"; };
+		28891B3E2714928E41D6B87B /* libPods-WDHorizontalTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDHorizontalTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		302C59FA334C38D2E6F1B590 /* Pods-WDHorizontalTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDHorizontalTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDHorizontalTableView/Pods-WDHorizontalTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		67B526481B7F9AF4C729CF01 /* Pods-WDHorizontalTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDHorizontalTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDHorizontalTableView/Pods-WDHorizontalTableView.release.xcconfig"; sourceTree = "<group>"; };
+		B682A9A8203FC0F700AF6865 /* WDHorizontalTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDHorizontalTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B682A9AB203FC0F700AF6865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B682A9AC203FC0F700AF6865 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B682A9AE203FC0F700AF6865 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B682A9AF203FC0F700AF6865 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B682A9B2203FC0F700AF6865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B682A9B4203FC0F700AF6865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B682A9B7203FC0F700AF6865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B682A9B9203FC0F700AF6865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B682A9BA203FC0F700AF6865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B682A9C0203FC0F800AF6865 /* WDHorizontalTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDHorizontalTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B682A9C4203FC0F800AF6865 /* WDHorizontalTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableViewTests.m; sourceTree = "<group>"; };
+		B682A9C6203FC0F800AF6865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B682A9CF203FC10900AF6865 /* WDHorizontalTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableViewItem.m; sourceTree = "<group>"; };
+		B682A9D1203FC10900AF6865 /* WDHorizontalTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHorizontalTableView.m; sourceTree = "<group>"; };
+		B682A9D2203FC10900AF6865 /* WDHorizontalTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHorizontalTableViewItem.h; sourceTree = "<group>"; };
+		B682A9D3203FC10900AF6865 /* WDHorizontalTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHorizontalTableView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B6665BC61C239F4200B5D255 /* Frameworks */ = {
+		B682A9A5203FC0F700AF6865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFC3114A0D875C0C7B1A670 /* libPods-WDHorizontalTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6665BE21C239F4200B5D255 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6665BED1C239F4200B5D255 /* Frameworks */ = {
+		B682A9BD203FC0F800AF6865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,96 +71,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6665BC01C239F4200B5D255 = {
+		A35272EC0FC1E43C747B6BBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6665BCB1C239F4200B5D255 /* WDHorizontalTableView */,
-				B6665BE81C239F4200B5D255 /* WDHorizontalTableViewTests */,
-				B6665BF31C239F4200B5D255 /* WDHorizontalTableViewUITests */,
-				B6665BCA1C239F4200B5D255 /* Products */,
+				28891B3E2714928E41D6B87B /* libPods-WDHorizontalTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B682A99F203FC0F700AF6865 = {
+			isa = PBXGroup;
+			children = (
+				B682A9AA203FC0F700AF6865 /* WDHorizontalTableView */,
+				B682A9C3203FC0F800AF6865 /* WDHorizontalTableViewTests */,
+				B682A9A9203FC0F700AF6865 /* Products */,
+				BC10ADFBE38FDDED44897F4D /* Pods */,
+				A35272EC0FC1E43C747B6BBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		B6665BCA1C239F4200B5D255 /* Products */ = {
+		B682A9A9203FC0F700AF6865 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6665BC91C239F4200B5D255 /* WDHorizontalTableView.app */,
-				B6665BE51C239F4200B5D255 /* WDHorizontalTableViewTests.xctest */,
-				B6665BF01C239F4200B5D255 /* WDHorizontalTableViewUITests.xctest */,
+				B682A9A8203FC0F700AF6865 /* WDHorizontalTableView.app */,
+				B682A9C0203FC0F800AF6865 /* WDHorizontalTableViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6665BCB1C239F4200B5D255 /* WDHorizontalTableView */ = {
+		B682A9AA203FC0F700AF6865 /* WDHorizontalTableView */ = {
 			isa = PBXGroup;
 			children = (
-				B6665C021C239F4900B5D255 /* Library */,
-				B6665BCF1C239F4200B5D255 /* AppDelegate.h */,
-				B6665BD01C239F4200B5D255 /* AppDelegate.m */,
-				B6665BD21C239F4200B5D255 /* ViewController.h */,
-				B6665BD31C239F4200B5D255 /* ViewController.m */,
-				B6665BD51C239F4200B5D255 /* Main.storyboard */,
-				B6665BDB1C239F4200B5D255 /* Assets.xcassets */,
-				B6665BDD1C239F4200B5D255 /* LaunchScreen.storyboard */,
-				B6665BE01C239F4200B5D255 /* Info.plist */,
-				B6665BD81C239F4200B5D255 /* WDHorizontalTableView.xcdatamodeld */,
-				B6665BCC1C239F4200B5D255 /* Supporting Files */,
+				B682A9D3203FC10900AF6865 /* WDHorizontalTableView.h */,
+				B682A9D1203FC10900AF6865 /* WDHorizontalTableView.m */,
+				B682A9D2203FC10900AF6865 /* WDHorizontalTableViewItem.h */,
+				B682A9CF203FC10900AF6865 /* WDHorizontalTableViewItem.m */,
+				B682A9AB203FC0F700AF6865 /* AppDelegate.h */,
+				B682A9AC203FC0F700AF6865 /* AppDelegate.m */,
+				B682A9AE203FC0F700AF6865 /* ViewController.h */,
+				B682A9AF203FC0F700AF6865 /* ViewController.m */,
+				B682A9B1203FC0F700AF6865 /* Main.storyboard */,
+				B682A9B4203FC0F700AF6865 /* Assets.xcassets */,
+				B682A9B6203FC0F700AF6865 /* LaunchScreen.storyboard */,
+				B682A9B9203FC0F700AF6865 /* Info.plist */,
+				B682A9BA203FC0F700AF6865 /* main.m */,
 			);
 			path = WDHorizontalTableView;
 			sourceTree = "<group>";
 		};
-		B6665BCC1C239F4200B5D255 /* Supporting Files */ = {
+		B682A9C3203FC0F800AF6865 /* WDHorizontalTableViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6665BCD1C239F4200B5D255 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B6665BE81C239F4200B5D255 /* WDHorizontalTableViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				B6665BE91C239F4200B5D255 /* WDHorizontalTableViewTests.m */,
-				B6665BEB1C239F4200B5D255 /* Info.plist */,
+				B682A9C4203FC0F800AF6865 /* WDHorizontalTableViewTests.m */,
+				B682A9C6203FC0F800AF6865 /* Info.plist */,
 			);
 			path = WDHorizontalTableViewTests;
 			sourceTree = "<group>";
 		};
-		B6665BF31C239F4200B5D255 /* WDHorizontalTableViewUITests */ = {
+		BC10ADFBE38FDDED44897F4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6665BF41C239F4200B5D255 /* WDHorizontalTableViewUITests.m */,
-				B6665BF61C239F4200B5D255 /* Info.plist */,
+				302C59FA334C38D2E6F1B590 /* Pods-WDHorizontalTableView.debug.xcconfig */,
+				67B526481B7F9AF4C729CF01 /* Pods-WDHorizontalTableView.release.xcconfig */,
 			);
-			path = WDHorizontalTableViewUITests;
-			sourceTree = "<group>";
-		};
-		B6665C021C239F4900B5D255 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				B6665C031C239F6E00B5D255 /* WDHorizontalTableView.h */,
-				B6665C041C239F6E00B5D255 /* WDHorizontalTableView.m */,
-				B68AD83A1C23A93F00522C4F /* WDHorizontalTableViewDelegate.h */,
-				B6665C061C239F9600B5D255 /* WDHorizontalTableViewCell.h */,
-				B6665C071C239F9700B5D255 /* WDHorizontalTableViewCell.m */,
-				B6665C0B1C23A00300B5D255 /* WDHorizontalTableViewCellPool.h */,
-				B6665C0C1C23A00300B5D255 /* WDHorizontalTableViewCellPool.m */,
-				B6665C0E1C23A02900B5D255 /* UIView+WDHorizontalTableView.h */,
-				B6665C0F1C23A02900B5D255 /* UIView+WDHorizontalTableView.m */,
-			);
-			name = Library;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6665BC81C239F4200B5D255 /* WDHorizontalTableView */ = {
+		B682A9A7203FC0F700AF6865 /* WDHorizontalTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6665BF91C239F4200B5D255 /* Build configuration list for PBXNativeTarget "WDHorizontalTableView" */;
+			buildConfigurationList = B682A9C9203FC0F800AF6865 /* Build configuration list for PBXNativeTarget "WDHorizontalTableView" */;
 			buildPhases = (
-				B6665BC51C239F4200B5D255 /* Sources */,
-				B6665BC61C239F4200B5D255 /* Frameworks */,
-				B6665BC71C239F4200B5D255 /* Resources */,
+				E552893ADAC146347121B0D7 /* [CP] Check Pods Manifest.lock */,
+				B682A9A4203FC0F700AF6865 /* Sources */,
+				B682A9A5203FC0F700AF6865 /* Frameworks */,
+				B682A9A6203FC0F700AF6865 /* Resources */,
+				E010A43342F05133F862C437 /* [CP] Embed Pods Frameworks */,
+				C2D2EFCDC8A6B7AE9A58D9E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,107 +157,78 @@
 			);
 			name = WDHorizontalTableView;
 			productName = WDHorizontalTableView;
-			productReference = B6665BC91C239F4200B5D255 /* WDHorizontalTableView.app */;
+			productReference = B682A9A8203FC0F700AF6865 /* WDHorizontalTableView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B6665BE41C239F4200B5D255 /* WDHorizontalTableViewTests */ = {
+		B682A9BF203FC0F800AF6865 /* WDHorizontalTableViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6665BFC1C239F4200B5D255 /* Build configuration list for PBXNativeTarget "WDHorizontalTableViewTests" */;
+			buildConfigurationList = B682A9CC203FC0F800AF6865 /* Build configuration list for PBXNativeTarget "WDHorizontalTableViewTests" */;
 			buildPhases = (
-				B6665BE11C239F4200B5D255 /* Sources */,
-				B6665BE21C239F4200B5D255 /* Frameworks */,
-				B6665BE31C239F4200B5D255 /* Resources */,
+				B682A9BC203FC0F800AF6865 /* Sources */,
+				B682A9BD203FC0F800AF6865 /* Frameworks */,
+				B682A9BE203FC0F800AF6865 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B6665BE71C239F4200B5D255 /* PBXTargetDependency */,
+				B682A9C2203FC0F800AF6865 /* PBXTargetDependency */,
 			);
 			name = WDHorizontalTableViewTests;
 			productName = WDHorizontalTableViewTests;
-			productReference = B6665BE51C239F4200B5D255 /* WDHorizontalTableViewTests.xctest */;
+			productReference = B682A9C0203FC0F800AF6865 /* WDHorizontalTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B6665BEF1C239F4200B5D255 /* WDHorizontalTableViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B6665BFF1C239F4200B5D255 /* Build configuration list for PBXNativeTarget "WDHorizontalTableViewUITests" */;
-			buildPhases = (
-				B6665BEC1C239F4200B5D255 /* Sources */,
-				B6665BED1C239F4200B5D255 /* Frameworks */,
-				B6665BEE1C239F4200B5D255 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B6665BF21C239F4200B5D255 /* PBXTargetDependency */,
-			);
-			name = WDHorizontalTableViewUITests;
-			productName = WDHorizontalTableViewUITests;
-			productReference = B6665BF01C239F4200B5D255 /* WDHorizontalTableViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B6665BC11C239F4200B5D255 /* Project object */ = {
+		B682A9A0203FC0F700AF6865 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "何伟东";
 				TargetAttributes = {
-					B6665BC81C239F4200B5D255 = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 4J4QTQULJG;
+					B682A9A7203FC0F700AF6865 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 					};
-					B6665BE41C239F4200B5D255 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = B6665BC81C239F4200B5D255;
-					};
-					B6665BEF1C239F4200B5D255 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = B6665BC81C239F4200B5D255;
+					B682A9BF203FC0F800AF6865 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B682A9A7203FC0F700AF6865;
 					};
 				};
 			};
-			buildConfigurationList = B6665BC41C239F4200B5D255 /* Build configuration list for PBXProject "WDHorizontalTableView" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = B682A9A3203FC0F700AF6865 /* Build configuration list for PBXProject "WDHorizontalTableView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = B6665BC01C239F4200B5D255;
-			productRefGroup = B6665BCA1C239F4200B5D255 /* Products */;
+			mainGroup = B682A99F203FC0F700AF6865;
+			productRefGroup = B682A9A9203FC0F700AF6865 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6665BC81C239F4200B5D255 /* WDHorizontalTableView */,
-				B6665BE41C239F4200B5D255 /* WDHorizontalTableViewTests */,
-				B6665BEF1C239F4200B5D255 /* WDHorizontalTableViewUITests */,
+				B682A9A7203FC0F700AF6865 /* WDHorizontalTableView */,
+				B682A9BF203FC0F800AF6865 /* WDHorizontalTableViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B6665BC71C239F4200B5D255 /* Resources */ = {
+		B682A9A6203FC0F700AF6865 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6665BDF1C239F4200B5D255 /* LaunchScreen.storyboard in Resources */,
-				B6665BDC1C239F4200B5D255 /* Assets.xcassets in Resources */,
-				B6665BD71C239F4200B5D255 /* Main.storyboard in Resources */,
+				B682A9B8203FC0F700AF6865 /* LaunchScreen.storyboard in Resources */,
+				B682A9B5203FC0F700AF6865 /* Assets.xcassets in Resources */,
+				B682A9B3203FC0F700AF6865 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6665BE31C239F4200B5D255 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6665BEE1C239F4200B5D255 /* Resources */ = {
+		B682A9BE203FC0F800AF6865 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,66 +237,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2D2EFCDC8A6B7AE9A58D9E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDHorizontalTableView/Pods-WDHorizontalTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E010A43342F05133F862C437 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDHorizontalTableView/Pods-WDHorizontalTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E552893ADAC146347121B0D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WDHorizontalTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		B6665BC51C239F4200B5D255 /* Sources */ = {
+		B682A9A4203FC0F700AF6865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6665BD41C239F4200B5D255 /* ViewController.m in Sources */,
-				B6665BD11C239F4200B5D255 /* AppDelegate.m in Sources */,
-				B6665BDA1C239F4200B5D255 /* WDHorizontalTableView.xcdatamodeld in Sources */,
-				B6665C081C239F9700B5D255 /* WDHorizontalTableViewCell.m in Sources */,
-				B6665C0D1C23A00300B5D255 /* WDHorizontalTableViewCellPool.m in Sources */,
-				B6665C101C23A02900B5D255 /* UIView+WDHorizontalTableView.m in Sources */,
-				B6665C051C239F6E00B5D255 /* WDHorizontalTableView.m in Sources */,
-				B6665BCE1C239F4200B5D255 /* main.m in Sources */,
+				B682A9D6203FC10900AF6865 /* WDHorizontalTableView.m in Sources */,
+				B682A9B0203FC0F700AF6865 /* ViewController.m in Sources */,
+				B682A9BB203FC0F700AF6865 /* main.m in Sources */,
+				B682A9AD203FC0F700AF6865 /* AppDelegate.m in Sources */,
+				B682A9D4203FC10900AF6865 /* WDHorizontalTableViewItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6665BE11C239F4200B5D255 /* Sources */ = {
+		B682A9BC203FC0F800AF6865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6665BEA1C239F4200B5D255 /* WDHorizontalTableViewTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6665BEC1C239F4200B5D255 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6665BF51C239F4200B5D255 /* WDHorizontalTableViewUITests.m in Sources */,
+				B682A9C5203FC0F800AF6865 /* WDHorizontalTableViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B6665BE71C239F4200B5D255 /* PBXTargetDependency */ = {
+		B682A9C2203FC0F800AF6865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B6665BC81C239F4200B5D255 /* WDHorizontalTableView */;
-			targetProxy = B6665BE61C239F4200B5D255 /* PBXContainerItemProxy */;
-		};
-		B6665BF21C239F4200B5D255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B6665BC81C239F4200B5D255 /* WDHorizontalTableView */;
-			targetProxy = B6665BF11C239F4200B5D255 /* PBXContainerItemProxy */;
+			target = B682A9A7203FC0F700AF6865 /* WDHorizontalTableView */;
+			targetProxy = B682A9C1203FC0F800AF6865 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6665BD51C239F4200B5D255 /* Main.storyboard */ = {
+		B682A9B1203FC0F700AF6865 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B6665BD61C239F4200B5D255 /* Base */,
+				B682A9B2203FC0F700AF6865 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B6665BDD1C239F4200B5D255 /* LaunchScreen.storyboard */ = {
+		B682A9B6203FC0F700AF6865 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B6665BDE1C239F4200B5D255 /* Base */,
+				B682A9B7203FC0F700AF6865 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -366,29 +339,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B6665BF71C239F4200B5D255 /* Debug */ = {
+		B682A9C7203FC0F800AF6865 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -402,37 +387,48 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B6665BF81C239F4200B5D255 /* Release */ = {
+		B682A9C8203FC0F800AF6865 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -440,141 +436,100 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B6665BFA1C239F4200B5D255 /* Debug */ = {
+		B682A9CA203FC0F800AF6865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302C59FA334C38D2E6F1B590 /* Pods-WDHorizontalTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WDHorizontalTableView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xfmn.club.WDHorizontalTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.coderhe.WDHorizontalTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B6665BFB1C239F4200B5D255 /* Release */ = {
+		B682A9CB203FC0F800AF6865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B526481B7F9AF4C729CF01 /* Pods-WDHorizontalTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WDHorizontalTableView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xfmn.club.WDHorizontalTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.coderhe.WDHorizontalTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		B6665BFD1C239F4200B5D255 /* Debug */ = {
+		B682A9CD203FC0F800AF6865 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WDHorizontalTableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xfmn.club.WDHorizontalTableViewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.coderhe.WDHorizontalTableViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDHorizontalTableView.app/WDHorizontalTableView";
 			};
 			name = Debug;
 		};
-		B6665BFE1C239F4200B5D255 /* Release */ = {
+		B682A9CE203FC0F800AF6865 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WDHorizontalTableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xfmn.club.WDHorizontalTableViewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.coderhe.WDHorizontalTableViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDHorizontalTableView.app/WDHorizontalTableView";
-			};
-			name = Release;
-		};
-		B6665C001C239F4200B5D255 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = WDHorizontalTableViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xfmn.club.WDHorizontalTableViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = WDHorizontalTableView;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		B6665C011C239F4200B5D255 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = WDHorizontalTableViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xfmn.club.WDHorizontalTableViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = WDHorizontalTableView;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6665BC41C239F4200B5D255 /* Build configuration list for PBXProject "WDHorizontalTableView" */ = {
+		B682A9A3203FC0F700AF6865 /* Build configuration list for PBXProject "WDHorizontalTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6665BF71C239F4200B5D255 /* Debug */,
-				B6665BF81C239F4200B5D255 /* Release */,
+				B682A9C7203FC0F800AF6865 /* Debug */,
+				B682A9C8203FC0F800AF6865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6665BF91C239F4200B5D255 /* Build configuration list for PBXNativeTarget "WDHorizontalTableView" */ = {
+		B682A9C9203FC0F800AF6865 /* Build configuration list for PBXNativeTarget "WDHorizontalTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6665BFA1C239F4200B5D255 /* Debug */,
-				B6665BFB1C239F4200B5D255 /* Release */,
+				B682A9CA203FC0F800AF6865 /* Debug */,
+				B682A9CB203FC0F800AF6865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6665BFC1C239F4200B5D255 /* Build configuration list for PBXNativeTarget "WDHorizontalTableViewTests" */ = {
+		B682A9CC203FC0F800AF6865 /* Build configuration list for PBXNativeTarget "WDHorizontalTableViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6665BFD1C239F4200B5D255 /* Debug */,
-				B6665BFE1C239F4200B5D255 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6665BFF1C239F4200B5D255 /* Build configuration list for PBXNativeTarget "WDHorizontalTableViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B6665C001C239F4200B5D255 /* Debug */,
-				B6665C011C239F4200B5D255 /* Release */,
+				B682A9CD203FC0F800AF6865 /* Debug */,
+				B682A9CE203FC0F800AF6865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B6665BD81C239F4200B5D255 /* WDHorizontalTableView.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B6665BD91C239F4200B5D255 /* WDHorizontalTableView.xcdatamodel */,
-			);
-			currentVersion = B6665BD91C239F4200B5D255 /* WDHorizontalTableView.xcdatamodel */;
-			path = WDHorizontalTableView.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = B6665BC11C239F4200B5D255 /* Project object */;
+	rootObject = B682A9A0203FC0F700AF6865 /* Project object */;
 }

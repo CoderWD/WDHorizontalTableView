@@ -2,8 +2,8 @@
 //  WDHorizontalTableViewTests.m
 //  WDHorizontalTableViewTests
 //
-//  Created by 何伟东 Emal:xingfumanong@sina.cn QQ:654500619 on 15/12/18.
-//  Copyright © 2015年 何伟东.  All rights reserved.
+//  Created by 何伟东 on 2018/2/23.
+//  Copyright © 2018年 何伟东. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
